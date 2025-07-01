@@ -1,10 +1,11 @@
-## README: RNAseq_Transcriptomics_Workshop
+## README: RNAseq_analysis
 
-This repository contains R scripts for various analyses in an RNA-seq transcriptomics workshop. The scripts cover essential steps from data preprocessing and quality control to differential expression analysis, clustering, functional enrichment, and integration with metabolic pathways. Each script is designed to be run sequentially, building upon the results of previous steps.
+This repository contains R scripts for various analyses in an RNA-seq transcriptomics. The scripts cover essential steps: differential expression analysis, variation analysis (PCA), clustering  functional enrichment, and integration with metabolic pathways. Each script is designed to be run sequentially.
+
 
 ### Project Overview
 
-The primary goal of this workshop is to provide a practical understanding of RNA-seq data analysis. We analyze *Arabidopsis thaliana* leaf genes differentially expressed upon infection by *Pseudomonas syringae DC3000* after 7 days, comparing infected plants to mock-treated plants.
+The primary goal of this repository is to provide a reference and practical understanding of RNA-seq data analysis. We analyze *Arabidopsis thaliana* leaf genes differentially expressed upon infection by *Pseudomonas syringae DC3000* after 7 days, comparing infected plants to mock-treated plants. Data comes from the original study of [Vogel et al. (2016)](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.14036). This repo is inspired from [Introduction to RNA-seq](https://scienceparkstudygroup.github.io/rna-seq-lesson/index.html) where a more detailed process is given including dara proessing and quality control; the reader can download the data from that site. Scripts here are up to date, and include more explanatory comments. I decided not to use a Docker image simply because I did not have major problems installing the packages on my local machine.
 
 ### Scripts Description
 
@@ -22,7 +23,7 @@ A brief overview of each script is provided below, with a more detailed explanat
 
 ### 1. `pca_rnaseq.R`: Principal Component Analysis and Normalization
 
-**Goal:** This script focuses on data preprocessing, normalization, and dimensionality reduction using Principal Component Analysis (PCA) to visualize and interpret complex RNA-seq data. PCA helps identify patterns and groupings among samples.
+**Goal:** This script focuses on data preprocessing, normalization, and dimensionality reduction using Principal Component Analysis (PCA) to visualize and interpret RNA-seq data. PCA helps identify patterns and groupings among samples.
 
 **Steps:**
 
@@ -184,7 +185,7 @@ A brief overview of each script is provided below, with a more detailed explanat
 
 ### 5. `transcriptomic_metabolomic_integration.R`: Transcriptomic and Metabolomic Integration
 
-**Goal:** This script integrates transcriptomic data with metabolic pathways to gain deeper insights into potential metabolic changes and regulatory mechanisms. It prepares data for visualization using tools like the Interactive Pathways Explorer (iPath).
+**Goal:** This script integrates transcriptomic data with metabolic pathways to gain deeper insights into potential metabolic changes and regulatory mechanisms. It prepares data for visualization using tools like the [Interactive Pathways Explorer (iPath)](https://pathways.embl.de/).
 
 **Steps:**
 
